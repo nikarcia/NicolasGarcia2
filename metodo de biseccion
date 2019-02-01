@@ -1,0 +1,83 @@
+/////////////////////METODO DE BISECCION //////////////////////////////////////////7
+///////////////HECHO POR NICOLAS GARCIA 
+//////////////F=XEXP(X)-PI     [A=0,B=2]
+
+
+fa  -3.14159
+fb  11.6365
+c  1       fc  -0.423311
+c  1.5       fc  3.58094
+c  1.25       fc  1.22134
+c  1.125       fc  0.323651
+c  1.0625       fc  -0.067147
+c  1.09375       fc  0.123742
+c  1.07812       fc  0.0271929
+c  1.07031       fc  -0.0202503
+c  1.07422       fc  0.00340267
+c  1.07227       fc  -0.00844092
+c  1.07324       fc  -0.00252341
+c  1.07373       fc  0.000438557
+c  1.07349       fc  -0.0010427
+c  1.07361       fc  -0.000302136
+c  1.07367       fc  6.81937e-05
+c  1.07364       fc  -0.000116975
+c  1.07365       fc  -2.43919e-05
+c  1.07366       fc  2.19007e-05
+c  1.07366       fc  -1.24565e-06
+c  1.07366       fc  1.03275e-05
+c  1.07366       fc  4.54092e-06
+c  1.07366       fc  1.64763e-06
+c  1.07366       fc  2.00987e-07
+c  1.07366       fc  -5.22334e-07
+c  1.07366       fc  -1.60673e-07
+c  1.07366       fc  2.01571e-08
+c  1.07366       fc  -7.0258e-08
+c  1.07366       fc  -2.50504e-08
+c  1.07366       fc  -2.44666e-09
+la raiz esta en  1.07366 
+
+////////////////////////////////////////////// CODIGO //////////////////////////////////////////////////////////////////
+
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    long double a,b,c;
+    long double fa,fb,fc;
+    a=0;
+	b=2;
+	c=0;
+    fa=(a*exp(a))-M_PI;       cout<<"fa  "<<fa<<endl;
+    fb=(b*exp(b))-M_PI;       cout<<"fb  "<<fb<<endl;
+    fc=999;
+    int con=0;
+    
+    while(!(fc>-0.00000001 && fc<0.00000001)){
+        con++;
+        if((fa*fb)<0){
+            //cout<<"si hay raiz entre "<<a<<" y "<<b<<endl;
+            
+            c=(a+b)/2;          cout<<"c  "<<c;
+            fc=(c*exp(c))-M_PI;   cout<<"       fc  "<<fc<<endl;
+            
+            if((fa*fc)<0){
+                           // cout<<"si hay raiz entre a y c "<<a<<" y "<<c<<endl;
+                            fb=fc;
+                            b=c;
+            }
+            if((fb*fc)<0){
+                           // cout<<"si hay raiz entre b y c "<<b<<" y "<<c<<endl;
+                            fa=fc;
+                            a=c;
+            }
+        }
+        
+    }
+    cout<<"la raiz esta en  " << c;
+
+    return 0;
+}
