@@ -1,0 +1,25 @@
+Resolución de raíces de ecuaciones en ingeniería de sistemas
+
+Con el gran poder de cómputo que se tiene en estos días, el ingeniero dispone 
+de grandes ventajas para poder llevar a cabo su misión y abordar cada día retos 
+más ambiciosos en la solución de nuevos problemas. Encontramos así aplicaciones
+de los métodos numéricos en los ámbitos más diversos desde sectores tecnológicos
+tan clásicos como la ingeniería estructural o la aerodinámica de aviones, hasta 
+aplicaciones más sofisticadas como ingeniería de alimentos, ingeniería médica, 
+diseño de fármacos, biología, etc.
+
+En la actualidad, gracias a la gran evolución que han tenido los métodos numéricos 
+y su implementación en potentes computadoras, es posible, por ejemplo, diseñar y construir 
+programas para modelar el choque de un vehículo o hacer el análisis aerodinámico estructural
+de un avión, resolviendo en cada caso sistemas algebraicos de ecuaciones con varios cientos de
+miles (a veces de millones) de incógnitas, implementando los algoritmos de análisis numérico en un lenguaje de programación. 
+
+
+
+Raíces de ecuaciones
+
+En ocasiones en el ámbito de la ingeniería de sistemas es necesario resolver ecuaciones no lineales
+que no tienen solución analítica o que es muy complicado hallarlas, como en el caso de la fórmula de 
+la secante que se usa para diseñar un programa para el cálculo de la deflexión de columnas con carga excéntrica.
+Para estos casos, deben utilizarse métodos de solución numérica de ecuaciones.
+
