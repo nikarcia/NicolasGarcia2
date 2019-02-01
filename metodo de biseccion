@@ -2,6 +2,10 @@
 ///////////////HECHO POR NICOLAS GARCIA 
 //////////////F=XEXP(X)-PI     [A=0,B=2]
 
+n=(ln(intervalo)-ln(error))/ln(2)
+
+n=log(d/e)/log(2)
+
 
 fa  -3.14159
 fb  11.6365
