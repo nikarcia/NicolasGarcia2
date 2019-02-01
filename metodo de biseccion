@@ -61,7 +61,7 @@ int main()
         if((fa*fb)<0){
             //cout<<"si hay raiz entre "<<a<<" y "<<b<<endl;
             
-            c=(a+b)/2;          cout<<"c  "<<c;
+            c=(a+b)/2;          cout<<con <<"  c  "<<c;
             fc=(c*exp(c))-M_PI;   cout<<"       fc  "<<fc<<endl;
             
             if((fa*fc)<0){
@@ -77,7 +77,8 @@ int main()
         }
         
     }
-    cout<<"la raiz esta en  " << c;
+    cout<<"la raiz esta en  " << c << endl;
+    cout<<"iteraciones : " << con;
 
     return 0;
 }
