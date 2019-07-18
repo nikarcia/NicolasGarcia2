@@ -4,6 +4,15 @@ Calcule el error de redondeo si se quiere almacenar el número 536.78
 
 536.78 - 536.7 = 0.08
 
+Problema: Implemente en cualquier lenguaje el siguiente algoritmo que sirve para calcular la
+raíz cuadrada. Aplíquelo para evaluar la raíz cuadrada de 7, analice su precisión, como podría
+evaluar la convergencia y validez del algoritmo.
+dato         7
+error permitido      0.00001                                                                                                                                              
+ingrese el valor inicial   2.5                                                                                                                                                  
+la raiz cuadrada de 7 es 2.64575                                                                                                                     
+numero de operaciones : 4
+
 Problema: Utilizando el teorema de Taylor hallar la aproximación de e^0.5
 con cinco cifras significativas.
  
