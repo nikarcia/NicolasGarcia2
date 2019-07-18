@@ -1,1 +1,5 @@
+Problema: Utilizando el teorema de Taylor hallar la aproximación de e^0.5
+con cinco cifras significativas.
+ 
+centrado en 0
 e^0+e^0(0.5-0)+((e^0)/2)(0.5-0)^2+((e^0)/6)(0.5-0)^3 =1.6458333333
