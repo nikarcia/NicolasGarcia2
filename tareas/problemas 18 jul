@@ -1,3 +1,9 @@
+Problema: Suponga que un dispositivo solo puede almacenar únicamente los cuatro primeros
+dígitos decimales de cada número real, y trunca los restantes (esto es redondeo inferior).
+Calcule el error de redondeo si se quiere almacenar el número 536.78
+
+536.78 - 536.7 = 0.08
+
 Problema: Utilizando el teorema de Taylor hallar la aproximación de e^0.5
 con cinco cifras significativas.
  
@@ -9,4 +15,12 @@ solución del siguiente problema
 
 error relstivo =  (0.1/4+0.1/5)*20  =0.9
 error absoluto  0.9*20/100 = 0.18
+
+Problema: Evaluar el valor de un polinomio es una tarea que involucra para la
+maquina realizar un número de operaciones la cual debe ser mínimas. Como se puede
+evaluar el siguiente polinomio con el número mínimo de multiplicaciones 
+
+se puede factorizar el polinomio  de la siguiente manera   
+
+(x(x(x(2x)-3)+3)-4)  =  2x^4-3x^2+3x-4
  
