@@ -1,0 +1,52 @@
+////////////////////////////////////////////// CODIGO //////////////////////////////////////////////////////////////////
+
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    long double a,b,c;
+    long double fa,fb,fc;
+    a=0;
+	b=1;
+	c=0;
+    fa=(a*a*a+5*a-1);       cout<<"fa  "<<fa<<endl;
+    fb=(b*b*b+5*b-1);        cout<<"fb  "<<fb<<endl;
+    fc=999;
+    int con=0;
+    
+    while(!(fc>-1*10 && fc<0.000000001)){
+        con++;
+        if((fa*fb)<0){
+            //cout<<"si hay raiz entre "<<a<<" y "<<b<<endl;
+            
+            c=(a+b)/2;          cout<<con <<"  c  "<<c;
+            fc=(c*c*c+5*c-1);   cout<<"       fc  "<<fc<<endl;
+            
+            if((fa*fc)<0){
+                           // cout<<"si hay raiz entre a y c "<<a<<" y "<<c<<endl;
+                            fb=fc;
+                            b=c;
+            }
+            if((fb*fc)<0){
+                           // cout<<"si hay raiz entre b y c "<<b<<" y "<<c<<endl;
+                            fa=fc;
+                            a=c;
+            }
+        }
+        
+    }
+    cout<<"la raiz esta en  " << c << endl;
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+29  c  0.198437       fc  6.25296e-09                                                                                            
+30  c  0.198437       fc  1.48633e-09                                                                                            
+31  c  0.198437       fc  -8.96986e-10                                                                                           
+la raiz esta en  0.198437
