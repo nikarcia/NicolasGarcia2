@@ -22,8 +22,8 @@ e^0+e^0(0.5-0)+((e^0)/2)(0.5-0)^2+((e^0)/6)(0.5-0)^3 =1.6458333333
 Problema: Calcule el tamaño del error dado por las operaciones aritméticas, para la
 solución del siguiente problema
 
-error relstivo =  (0.1/4+0.1/5)*20  =0.9
-error absoluto  0.9*20/100 = 0.18
+error relativo =  (0.1/4)+(0.1/5)  = 0.045
+error absoluto =  4*0.1+5*0.1  =  0.9
 
 Problema: Evaluar el valor de un polinomio es una tarea que involucra para la
 maquina realizar un número de operaciones la cual debe ser mínimas. Como se puede
